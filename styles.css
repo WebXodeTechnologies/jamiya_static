@@ -1,8 +1,280 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+#nav{
+  height: 6rem;
+}
+#options{
+  font-family: Dancing Script !important; 
+  font-weight: bolder;
+  font-size: 20px;
+}
+#brand{
+  font-family: Sofia!important; 
+  font-weight: bolder;
+  font-size: 2pc;
+  color: #1bdeaa;
+
+}
+.nav-link:hover,
+.dropdown-item:hover {
+  background: #1bdeaa;
+  background: radial-gradient(circle, rgba(27, 222, 170, 1) 35%, rgba(45, 140, 115, 1) 100%, rgba(0, 103, 75, 1) 100%);
+  color: white !important;
+  border-radius: 5px;
+}
+
+.blog-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  object-fit: cover;
+  height: 200px;
+}
+
+.btn-green {
+  background-color: #2e7d65;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+#blog{
+  font-family: Borel;
+}
+.btn-green:hover {
+  background-color: #24624f;
+}
+
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #198754; /* Bootstrap primary green */
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+#scrollTopBtn:hover {
+  opacity: 1;
+}
+
+
+.hero-section h1  {
+  font-family: 'Borel', cursive;
+  color: whitesmoke;
+}
+
+.hero-section p {
+  font-family: 'Borel', cursive;
+  font-size: 1.25rem;
+  color: whitesmoke;
+}
+
+
+
+.hero-section {
+  min-height: 100vh;
+  background: #1bdeaa;
+  background: radial-gradient(circle, rgba(27, 222, 170, 1) 35%, rgba(45, 140, 115, 1) 100%, rgba(0, 103, 75, 1) 100%);
+  padding: 60px 15px;
+}
+
+.hero-img {
+  max-width: 90%;
+  height: auto;
+  max-height: 450px;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.6s ease;
+
+}
+
+.hero-img:hover {
+
+  filter: grayscale(0%);
+
+}
+.button {
+  padding: 15px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #198754;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  z-index: 1;
+  border-radius: 25px;
+  display: inline-block;
+  border: 2px solid transparent;
+  border-color: aquamarine;
+  font-family: borel;
+
+}
+#shop{
+  background: radial-gradient(circle, rgba(27, 222, 170, 1) 35%, rgb(225, 237, 233) 100%);
+
+}
+
+/* Custom Gradient Style */
+.button2 {
+  background: radial-gradient(circle, rgba(27, 222, 170, 1) 35%, rgb(225, 237, 233) 100%);
+}
+
+/* Hover Animation */
+.button2:hover {
+  transform: rotate(5deg) scale(1.05);
+  border-color: #fff;
+}
+.skincare-section {
+  background: url('assets/images/skincare.jpg') no-repeat center center/cover;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+.haircare-section {
+  background: url('assets/images/haircare.jpg') no-repeat center center/cover;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+#about{
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.overlay {
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-family: 'Dancing Script', cursive;
+  color: white;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 260px;
+  height: 340px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flip-card-back {
+  background: #2e7d65;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+/* Contact Info Cards */
+.contact-info-item {
+  background-color: #2e7d65 !important;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-info-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.contact-info-item i {
+  color: #ffffff;
+}
+
+/* Form Section */
+form .form-control {
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  box-shadow: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+form .form-control:focus {
+  border-color: #2e7d65;
+  box-shadow: 0 0 0 0.2rem rgba(46, 125, 101, 0.25);
+}
+
+form .form-floating label {
+  color: #888;
+}
+
+form button[type="submit"] {
+  background-color: #2e7d65;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+form button[type="submit"]:hover {
+  background-color: #24624f;
+}
+
+/* Map Styling */
+iframe {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive Padding */
+@media (max-width: 768px) {
+  #contact .row {
+    flex-direction: column;
   }
-  
+}
