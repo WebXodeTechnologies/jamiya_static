@@ -2,11 +2,396 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Starter Page</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>NaturaGlow</title>
+
+  <!-- ✅ Google Fonts (Poppins example) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Sofia|Borel">
+  <!-- ✅ Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- ✅ Bootstrap Icons (optional) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- ✅ Your Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  
+   <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+
 </head>
 <body>
-  <h1>Welcome to Jamiya Frontend</h1>
+
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top" id="nav">
+    <div class="container-fluid" id="options">
+      <!-- Brand Left -->
+      <a class="navbar-brand fw-bold" id="brand" href="#">🌿 NaturaGlow</a>
+  
+      <!-- Toggler (mobile) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navbar Centered Links -->
+      <div class="collapse navbar-collapse justify-content-center"  id="navbarContent">
+        <ul class="navbar-nav mb-2 mb-lg-0" >
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-target="home">Home</a>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+              <li><a class="dropdown-item" href="#" data-target="skincare">Skincare</a></li>
+              <li><a class="dropdown-item" href="#" data-target="haircare">Haircare</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-target="about">About Us</a>
+          </li>
+  
+          <li class="nav-item" >
+            <a class="nav-link" href="#" data-target="blog">Blog</a>
+          </li>
+  
+          <li class="nav-item" >
+            <a class="nav-link" href="#" data-target="contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+  
+      <!-- CTA Right -->
+      <div class="d-flex align-items-center">
+        <a href="#" id="shop" class="btn ms-3">Shop Now</a>
+      </div>
+    </div>
+  </nav>
+  
+  
+
+  <section id="home" class="hero-section d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Side: Responsive Image -->
+        <div class="col-md-6 text-center mb-4 mb-md-0">
+          <img src="assets/images/home.jpg" alt="Woman with cosmetics" class="hero-img img-fluid rounded shadow">
+        </div>
+        <!-- Right Side: Text Content -->
+        <div class="col-md-6 text-md-start text-center">
+          <h1 class="display-4 fw-bold">Welcome to <span class="text-success" style="color:aliceblue;">Naturaglow</span></h1>
+          <p class="lead">Experience the purity of nature with our handcrafted, plant-based skincare products. Embrace your natural beauty with Naturaglow.</p>
+          <a href="#"  class="button button2">Explore Our Products</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+
+
+  <section class="skincare-section" id="skincare">
+    <div class="overlay">
+      <h2 class="title">🌿 Skincare Rooted in Nature</h2>
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="assets/images/cleanser.png" alt="Cleanser">
+            </div>
+            <div class="flip-card-back">
+              <h3>Natural Cleanser</h3>
+              <p>Gently cleanses with botanical extracts and soothes your skin.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="assets/images/cream.jpg" alt="Moisturizer">
+            </div>
+            <div class="flip-card-back">
+              <h3>Hydrating Moisturizer</h3>
+              <p>Deep hydration with aloe and green tea. For glowing, smooth skin.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="assets/images/mask.jpg" alt="Face Mask">
+            </div>
+            <div class="flip-card-back">
+              <h3>Herbal Face Mask</h3>
+              <p>Detox and nourish using nature’s finest herbs and clays.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <section class="haircare-section" id="haircare">
+    <div class="overlay">
+      <h2 class="title">🌿 Haircare Rooted in Nature</h2>
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="assets/images/shampoo.jpg" alt="shampoo">
+            </div>
+            <div class="flip-card-back">
+              <h3>Shampoo</h3>
+              <p>Gently cleanses with botanical extracts and soothes your hair.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="assets/images/conditioner.jpg" alt="Conditioner">
+            </div>
+            <div class="flip-card-back">
+              <h3>Conditioner</h3>
+              <p>Deep hydration with aloe and green tea. For glowing, smooth hair.</p>
+            </div>
+          </div>
+        </div>
+  
+       
+      </div>
+    </div>
+  </section>  
+
+  
+
+  <section id="about" class="container text-center">
+    <!-- Feature Start -->
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="feature-item position-relative text-center p-3" style="background-color:#2e7d65;">
+              <div class="border py-5 px-3">
+                <i class="fa fa-leaf fa-3x text-light mb-4"></i>
+                <h5 class="text-white mb-0">100% Natural</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="feature-item position-relative text-center p-3" style="background-color:#2e7d65;">
+              <div class="border py-5 px-3">
+                <i class="fa fa-tint-slash fa-3x text-light mb-4"></i>
+                <h5 class="text-white mb-0">Non-comedogenic
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="feature-item position-relative text-center p-3" style="background-color:#2e7d65;">
+              <div class="border py-5 px-3">
+                <i class="fa fa-heartbeat fa-3x text-light mb-4"></i>
+                <h5 class="text-white mb-0">Skin Friendly</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- About Product Start -->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6">
+            <img class="img-fluid animated pulse infinite rounded" src="assets/images/about.gif" alt="NaturaGlow Moisturizer">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="mb-4" style="color:#2e7d65;">
+              🌿 NaturaGlow </h1>
+            <p class="mb-4">
+              🌿 NaturaGlow blends the power of nature with gentle care,
+Crafting skincare and haircare that nourish from within.
+Every formula is enriched with plant-based extracts and essential oils,
+Free from harsh chemicals, parabens, and artificial fragrances.
+✨ For radiant skin, our moisturizers and cleansers restore balance and glow.
+🌱 For healthy hair, our oils and shampoos strengthen from root to tip.
+Rooted in purity, backed by tradition, made for modern beauty.
+Because when you care naturally, you shine beautifully — inside and out.</p>
+            <a class="btn btn-success py-2 px-4" style="background-color:#2e7d65; border:none;" href="#">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About Product End -->
+  </section>
+  
+
+  <!-- <section id="blog" class="container text-center">
+    <h2>Our Blog</h2>
+    <p>Read about skincare tips, DIY recipes, and natural beauty trends.</p>
+  </section> -->
+  <section id="blog" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class= "fw-bold" style="color: #2e7d65;">🌿 NaturaGlow Blog</h2>
+        <p class="text-muted">Stay updated with skincare tips, natural beauty hacks, and more.</p>
+      </div>
+      <div class="row g-4">
+        <!-- Blog Card 1 -->
+        <div class="col-md-4">
+          <div class="card blog-card h-100 shadow-sm border-0">
+            <img src="assets/images/blog1.gif" class="card-img-top" alt="Skincare Routine">
+            <div class="card-body">
+              <h5 class="card-title">5 Steps to a Glowing Skin</h5>
+              <p class="card-text">Discover our natural secrets to achieving radiant skin with daily care routines.</p>
+              <a href="#" class="btn btn-green">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Blog Card 2 -->
+        <div class="col-md-4">
+          <div class="card blog-card h-100 shadow-sm border-0">
+            <img src="assets/images/blog2.gif" class="card-img-top" alt="Natural Ingredients">
+            <div class="card-body">
+              <h5 class="card-title">Why Go Natural?</h5>
+              <p class="card-text">Learn why natural ingredients are the safest and most effective for your skin.</p>
+              <a href="#" class="btn btn-green">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Blog Card 3 -->
+        <div class="col-md-4">
+          <div class="card blog-card h-100 shadow-sm border-0">
+            <img src="assets/images/blog3.gif" class="card-img-top" alt="Essential Oils">
+            <div class="card-body">
+              <h5 class="card-title">Essential Oils & You</h5>
+              <p class="card-text">Explore how essential oils benefit your skin and enhance your wellness routine.</p>
+              <a href="#" class="btn btn-green">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section id="contact" class="container text-center">
+    <div class="container-fluid py-5">
+      <div class="container">
+          <div class="row g-4">
+              <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                  <div class="contact-info-item position-relative bg-primary text-center p-3">
+                      <div class="border py-5 px-3">
+                          <i class="fa fa-map-marker-alt fa-3x text-dark mb-4"></i>
+                          <h5 class="text-white">Office Address</h5>
+                          <h5 class="fw-light text-white">123 Street, New York, USA</h5>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                  <div class="contact-info-item position-relative bg-primary text-center p-3">
+                      <div class="border py-5 px-3">
+                          <i class="fa fa-phone-alt fa-3x text-dark mb-4"></i>
+                          <h5 class="text-white">Call Us</h5>
+                          <h5 class="fw-light text-white">+012 345 67890</h5>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                  <div class="contact-info-item position-relative bg-primary text-center p-3">
+                      <div class="border py-5 px-3">
+                          <i class="fa fa-envelope fa-3x text-dark mb-4"></i>
+                          <h5 class="text-white">Mail Us</h5>
+                          <h5 class="fw-light text-white">info@example.com</h5>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Contact Info End -->
+
+
+  <!-- Contact Start -->
+  <div class="container-fluid py-5">
+      <div class="container">
+          <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
+              <h1 class="text-primary mb-5"><span class="fw-light text-dark">If You Have Any Query,</span> Please Contact Us</h1></div>
+          <div class="row g-5">
+              <div class="col-lg-7 wow fadeIn" data-wow-delay="0.1s">
+                  <div class="wow fadeIn" data-wow-delay="0.3s">
+                      <form>
+                          <div class="row g-3">
+                              <div class="col-md-6">
+                                  <div class="form-floating">
+                                      <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                      <label for="name">Your Name</label>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="form-floating">
+                                      <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                      <label for="email">Your Email</label>
+                                  </div>
+                              </div>
+                              <div class="col-12">
+                                  <div class="form-floating">
+                                      <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                      <label for="subject">Subject</label>
+                                  </div>
+                              </div>
+                              <div class="col-12">
+                                  <div class="form-floating">
+                                      <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                      <label for="message">Message</label>
+                                  </div>
+                              </div>
+                              <div class="col-12">
+                                  <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+              <div class="col-lg-5 wow fadeIn" data-wow-delay="0.5s">
+                  <iframe class="w-100 h-100"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                  frameborder="0" style="min-height: 300px; border:0;" allowfullscreen="" aria-hidden="false"
+                  tabindex="0"></iframe>
+              </div>
+          </div>
+      </div>
+  </div>
+     </section>
+
+  <button id="scrollTopBtn" title="Go to Top" aria-label="Scroll to top">
+    &#x25B2;  <!-- ▲ Up arrow unicode -->
+  </button>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 NaturaGlow. All rights reserved.</p>
+  </footer>
+
+
+
+  <script src="index.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
